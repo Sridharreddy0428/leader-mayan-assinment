@@ -1,8 +1,5 @@
 from django.contrib import admin
-from .models import Document
+from .models import PersonDetails
 
 # Register your models here.
-
-@admin.register(Document)
-class DocumentAdmin(admin.ModelAdmin):
-    list_display = ('id', 'description', 'file', 'created_at', 'updated_at')
+admin.site.register(PersonDetails)
